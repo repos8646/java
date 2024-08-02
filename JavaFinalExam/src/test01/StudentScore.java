@@ -1,7 +1,6 @@
 package test01;
 
 public class StudentScore {
-
 	private String studentName;
 	private String studentId;
 	private String subject;
@@ -21,12 +20,14 @@ public class StudentScore {
 		return score;
 	}
 
-	public void setScore(double score) {
-		this.score = score;
-	}
 
-	public void updateScore(double) {
-		
+	public void updateScore(double score) {
+		if(score >= 0 && score <= 100) {
+			this.score = score;
+			System.out.println("점수 수정 완료");
+		}else {
+			System.out.println("잘못된 점수 입력");
+		}
 	}
 	
 	public void printStudentInfo() {
@@ -36,5 +37,4 @@ public class StudentScore {
 		System.out.println("점수 : " + this.score);
 	}
 
-	
 }

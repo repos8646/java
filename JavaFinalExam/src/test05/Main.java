@@ -16,18 +16,18 @@ public class Main {
 		System.out.println("---------------------------");
 
 		// 학생 과목 수강 신청
-		student1.enrollSubject(java);
-		student1.enrollSubject(database);
+		student2.enrollSubject(java);
+		student2.enrollSubject(database);
 		System.out.println("---------------------------");
 
 		// 성적 입력
 		student1.setScore(java, 96);
-		student1.setScore(java, 90);
+		student1.setScore(database, 90);
 		System.out.println("---------------------------");
 
 		// 성적 입력
 		student2.setScore(java, 86);
-		student2.setScore(java, 76);
+		student2.setScore(database, 76);
 		System.out.println("---------------------------");
 
 		// Subject 정보 출력
@@ -39,11 +39,11 @@ public class Main {
 		System.out.println("---------------------------");
 
 		// 학생 정보 출력
-		student1.prontStudentInfo();
+		student1.printStudentInfo();
 		System.out.println("---------------------------");
 
 		// 학생 정보 출력
-		student2.prontStudentInfo();
+		student2.printStudentInfo();
 		System.out.println("---------------------------");
 
 	}

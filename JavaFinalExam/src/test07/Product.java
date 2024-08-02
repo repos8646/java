@@ -17,8 +17,5 @@ public class Product {
 	protected void printProductInfo() {
 		
 	}
-	
-
-
 
 }

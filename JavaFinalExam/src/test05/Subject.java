@@ -9,18 +9,32 @@ public class Subject {
 
 	public Subject(String subName) {
 		this.subName = subName;
-		this.students = {  };
+		this.students = new Student[10];
 		this.studentCount = 0;
 	}
 
-	public void addStudent(){
-		
+	public void addStudent(Student student){
+		students[studentCount++] = student;
+			
 	}
 	
-	public void printSubjectInfo() {}
+	public void printSubjectInfo() {
+		
+		System.out.println("과목명 : " + subName);
+		System.out.print("수강생 : " );
+		
+		for(int i=0; i < studentCount; i++) {
+			System.out.print(students[i].getName() + ", ");
+		}
+		
+		System.out.println();
+	}
 
 	public String getSubName() {
 		return subName;
 	}
+	
+	
+	
 
 }

@@ -7,9 +7,9 @@ public class Main {
 		computer.printProductInfo();
 		System.out.println("---------------");
 
-		// 컴퓨터 객체 생성
+		// 의류 객체 생성
 		Clothes tshirt = new Clothes("C001", "T-Shirt", 20, 50, "L");
-		computer.printProductInfo();
+		tshirt.printProductInfo();
 		System.out.println("---------------");
 	
 	}

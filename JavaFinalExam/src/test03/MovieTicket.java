@@ -15,20 +15,30 @@ public class MovieTicket {
 	}
 	
 	public void bookTicket() {
-		
+		if(!isBooked) {
+			this.isBooked = true;
+			System.out.println(movieTitle+", "+screenTime+", "+seatNumber+" 예매완료");
+		}else {
+			System.out.println("이미 예매됨");
+		}
 	
 	}
 	
 
 	public void cancelBook() {
-		
+		if(isBooked) {
+			isBooked = false;
+			System.out.println(movieTitle+", "+screenTime+", "+seatNumber+" 취소완료");
+		}else {
+			System.out.println("아직 예매 안됨");
+		}
 	}
 	
 	public void printTicketInfo() {
 		System.out.println("영화제목 : " + this.movieTitle);
 		System.out.println("상영시간 : " + this.screenTime);
 		System.out.println("좌석번호 : " + this.seatNumber);
-		System.out.println("예매여부 : " + this.isBooked);
+		System.out.println("예매여부 : " + (this.isBooked ? "Yes" : "No"));
 	}
 	
 }

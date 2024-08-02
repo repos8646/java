@@ -13,8 +13,11 @@ public class Computer extends Product {
 		this.manufactor = manufactor;
 	}
 
+
+	
 	public void printProductInfo() {
-		
+		super.printProductInfo();
+		System.out.println("제조사 : " + manufactor);
 	}
 
 	

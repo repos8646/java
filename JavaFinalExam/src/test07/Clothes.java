@@ -10,7 +10,9 @@ public class Clothes extends Product {
 	}
 	
 	public void printProductInfo() {
-		
+		super.printProductInfo();
+		System.out.println("사이즈 : " + size);
+
 	}
 	
 }

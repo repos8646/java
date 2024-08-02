@@ -15,14 +15,16 @@ public class Doctor {
 		this.name = name;
 		this.id = id;
 		this.special = special;
-		this.patients = ArrayList<>();
+		this.patients = new ArrayList<>();
 	}
 	
-	public void addPatient(Patient) {}
+	public void addPatient(Patient patient) {
+		this.patients.add(patient);
+	}
 
 	@Override
 	public String toString() {
-		return "Doctor [name=" + name + ", id=" + id + ", special=" + special + ", patients=" + patients + "]";
+		return "의사: " + name + "(ID: " + id + ", 전문분야: " + special + ")\n" + "담당 환자 목록:\n" + patients;
 	}
 
 	

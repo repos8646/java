@@ -15,13 +15,21 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
-	public void updatePrice(int) {
-		
+	public void updatePrice(int price) {
+		if(price > 0) {
+			this.price = price;
+			System.out.println("키보드 가격 수정 됨");
+		}else {
+			System.out.println("입력이 잘못되었습니다.");
+		}
 	
 	}
 	
-	public void addStock(int) {
-		
+	public void addStock(int stock) {
+		if(stock > 0) {
+			this.quantity += stock;
+			System.out.println("키보드 " + quantity + "개 재고 추가 됨");
+		}
 	}
 	
 	public void printProductInfo() {
